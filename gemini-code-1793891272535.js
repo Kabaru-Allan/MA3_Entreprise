@@ -1,5 +1,5 @@
 async function saveBookingToLiveBackend(bookingData) {
-  const response = await fetch('https://matatu-backend.onrender.com/api/bookings', {
+  const response = await fetch('https://MA3_Entreprise.onrender.com/api/bookings', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(bookingData)
