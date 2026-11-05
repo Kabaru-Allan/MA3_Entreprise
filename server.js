@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // 1. Connect to Free MongoDB
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = mongodb+srv://kamauallan923_db_user:<db_password>@cluster0.ifkwfk2.mongodb.net/;
 mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.error("DB Error:", err));
